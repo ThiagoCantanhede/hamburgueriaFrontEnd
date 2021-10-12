@@ -13,6 +13,7 @@ O usuário pode:
 
 Para rodar o projeto, no diretório do mesmo basta utilizar o comando 
 ### `yarn start`
+*** Após realizar o download do fonte, talvez seja necessário rodar o npm install para baixar os pacotes necessários.
 
 No browse basta acessar o endereço http://localhost:3000
 
