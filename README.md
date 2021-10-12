@@ -1,4 +1,4 @@
-###`Projeto FrontEnd que traz uma simplificação de tela para seleção de lanches em uma hamburgueria. O sistema faz requisições ao backend e renderiza na tela 2 listagens: ###Ingredientes e um cárdapio de lanches.`
+### `Projeto FrontEnd que traz uma simplificação de tela para seleção de lanches em uma hamburgueria. O sistema faz requisições ao backend e renderiza na tela 2 listagens: Ingredientes e um cárdapio de lanches.`
 
 O usuário pode: 
 
@@ -6,7 +6,7 @@ O usuário pode:
 
 2- Realizar uma seleção de um lanche já montado. A listagem é exibida já com o preço do lanche calculado, baseado no valor individual de cada ingrediente.
 
-###Para o desenvolvimento do projeto, foi utilizado Javascript com framework React e para o esilização o Bulma. A opção pelo framework foi pela simplicidade que ele oferece para a ###montagem de tela com componentes e atualização de elementos.
+### Para o desenvolvimento do projeto, foi utilizado Javascript com framework React e para o esilização o Bulma. A opção pelo framework foi pela simplicidade que ele oferece para a montagem de tela com componentes e atualização de elementos.
   -O projeto conta com 3 componentes: App, Ingredientes e Cardapio.
   -Os acessos a api são realizadas através de 3 services: CardapioService, IngredientesService e LanchePersonalizadoService.
   -Os acessos foram desenvolvido com a ajuda do pacote axios.
