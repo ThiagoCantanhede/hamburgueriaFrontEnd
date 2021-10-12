@@ -16,4 +16,5 @@ Para rodar o projeto, no diretório do mesmo basta utilizar o comando
 *** Após realizar o download do fonte, talvez seja necessário rodar o npm install para baixar os pacotes necessários.
 
 No browse basta acessar o endereço http://localhost:3000
+O projeto acessa o backend através do endereço http://localhost:8080
 
