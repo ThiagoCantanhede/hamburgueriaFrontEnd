@@ -101,60 +101,71 @@ export default function ListaIngredientes(props) {
     const ingredientes = await retornarIngredientes();
     return (
       <div>
-        <table className="table is-bordered is-striped ">
-          <tbody>
-            {ingredientes.length ? (
-              ingredientes.map((i, index) => (
-                <tr>
-                  <td>{i.nome}</td>
-                  <td>
-                    {i.valor.toLocaleString('pt-BR', {
-                      style: 'currency',
-                      currency: 'BRL',
-                    })}
-                  </td>
-                  <td>
-                    <a
-                      href="#"
-                      onClick={() =>
-                        montarObjetoEEnviarParaCalcularOTotalDoLanchePersonalizado(
-                          i
-                        )
-                      }
-                    >
-                      Adicionar
-                    </a>
-                  </td>
-                  <td>
-                    <a
-                      href="#"
-                      onClick={() =>
-                        removerItemEmontarObjetoEEnviarParaCalcularOTotalDoLanchePersonalizado(
-                          i
-                        )
-                      }
-                    >
-                      Remover
-                    </a>
-                  </td>
-                </tr>
-              ))
-            ) : (
-              <div className="input-field col s12 center">
-                <p>Nenhum dado para exibir</p>
-              </div>
-            )}
-          </tbody>
-        </table>
         <div className="container">
-          <div className="column is-10">
-            Ingredientes selecionados: {itensLanchePersonalizado}
-            <br></br>
-            Total lanche personalizado:
-            {totalLanchePersonalizado.toLocaleString('pt-BR', {
-              style: 'currency',
-              currency: 'BRL',
-            })}
+          <div className=" columns is-multiline">
+            <div className="column is-12">
+              <strong>Opções para lanche personalizado:</strong>
+            </div>
+
+            <div className="column is-12">
+              <table className="table is-bordered is-striped ">
+                <tbody>
+                  {ingredientes.length ? (
+                    ingredientes.map((i, index) => (
+                      <tr>
+                        <td>{i.nome}</td>
+                        <td>
+                          {i.valor.toLocaleString('pt-BR', {
+                            style: 'currency',
+                            currency: 'BRL',
+                          })}
+                        </td>
+                        <td>
+                          <a
+                            href="#"
+                            onClick={() =>
+                              montarObjetoEEnviarParaCalcularOTotalDoLanchePersonalizado(
+                                i
+                              )
+                            }
+                          >
+                            Adicionar
+                          </a>
+                        </td>
+                        <td>
+                          <a
+                            href="#"
+                            onClick={() =>
+                              removerItemEmontarObjetoEEnviarParaCalcularOTotalDoLanchePersonalizado(
+                                i
+                              )
+                            }
+                          >
+                            Remover
+                          </a>
+                        </td>
+                      </tr>
+                    ))
+                  ) : (
+                    <div className="input-field col s12 center">
+                      <p>Nenhum dado para exibir</p>
+                    </div>
+                  )}
+                </tbody>
+              </table>
+
+              <div className="column is-12">
+                Ingredientes selecionados: {itensLanchePersonalizado}
+                <br></br>
+                <strong>
+                  Total lanche personalizado:
+                  {totalLanchePersonalizado.toLocaleString('pt-BR', {
+                    style: 'currency',
+                    currency: 'BRL',
+                  })}
+                </strong>
+              </div>
+            </div>
           </div>
         </div>
       </div>
